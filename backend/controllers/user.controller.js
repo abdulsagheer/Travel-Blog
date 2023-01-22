@@ -1,4 +1,4 @@
-import User from "../models/User";
+const User = require("../models/User");
 
 export const getAllUsers = async (req, res, next) => {
 	let users;
@@ -13,3 +13,7 @@ export const getAllUsers = async (req, res, next) => {
 	}
 	return res.status(200).json({ users });
 };
+
+export const signup = async (req, res, next) => {};
+
+export const login = async (req, res, next) => {};
